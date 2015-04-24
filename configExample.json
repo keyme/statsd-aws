@@ -1,0 +1,22 @@
+{
+  "aws": {
+    "keypair": "keypair1",
+    "access_key_id": "AAAAAAAAAAAA",
+    "secret_access_key": "BBBBBBBB"
+  },
+  "private_key_path": "/path/to/private/key",
+  "environments": {
+    "env1": {
+      "extra_config": {
+        "graphiteHost": "graphite.example.com"
+      }
+    },
+    "env1": {
+      "extra_config": {
+        "graphite": {
+          "legacyNamespace": false
+        }
+      }
+    }
+  }
+}

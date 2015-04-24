@@ -1,0 +1,9 @@
+1. Install Vagrant: http://www.vagrantup.com/downloads.html
+2. Install ChefDK: https://downloads.getchef.com/chef-dk
+3. Create 'statsd' security group in AWS with SSH and UDP8125 access.
+4. Install Vagrant plugins:
+   vagrant plugin install vagrant-berkshelf vagrant-omnibus vagrant-aws
+5. Configure your setup in config.json; see configExample.json for an example.
+6. Provision machine:
+   vagrant up <ENVIRONMENT> --provider aws
+7. Start sending stats!
